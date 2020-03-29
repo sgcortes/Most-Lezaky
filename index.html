@@ -34,7 +34,7 @@
         <script src="data/MostLezakyCLC_2.js"></script>
         <script src="data/3111Environmentforsportandrecreation_3.js"></script>
         <script src="data/2262Cimateregulation_4.js"></script>
-        <script src="data/2213Waterflowregulation_5.js"></script>
+        <script src="data/3112Usingnaturetodestress_5.js"></script>
         <script src="data/2211Erosionratesregulation_6.js"></script>
         <script src="data/1111Foodprovision_7.js"></script>
         <script>
@@ -140,7 +140,7 @@
                 lineJoin: 'miter',
                 weight: 6.0, 
                 fillOpacity: 0,
-                interactive: false,
+                interactive: true,
             }
         }
         map.createPane('pane_MostLekyMine_border_1');
@@ -148,7 +148,7 @@
         map.getPane('pane_MostLekyMine_border_1').style['mix-blend-mode'] = 'normal';
         var layer_MostLekyMine_border_1 = new L.geoJson(json_MostLekyMine_border_1, {
             attribution: '',
-            interactive: false,
+            interactive: true,
             dataVar: 'json_MostLekyMine_border_1',
             layerName: 'layer_MostLekyMine_border_1',
             pane: 'pane_MostLekyMine_border_1',
@@ -191,8 +191,8 @@
                         <td>' + (feature.properties['2211'] !== null ? Autolinker.link(feature.properties['2211'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">2213</th>\
-                        <td>' + (feature.properties['2213'] !== null ? Autolinker.link(feature.properties['2213'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                        <th scope="row">3112</th>\
+                        <td>' + (feature.properties['3112'] !== null ? Autolinker.link(feature.properties['3112'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">2262</th>\
@@ -411,8 +411,8 @@
                         <td>' + (feature.properties['2211'] !== null ? Autolinker.link(feature.properties['2211'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">2213</th>\
-                        <td>' + (feature.properties['2213'] !== null ? Autolinker.link(feature.properties['2213'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                        <th scope="row">3112</th>\
+                        <td>' + (feature.properties['3112'] !== null ? Autolinker.link(feature.properties['3112'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">2262</th>\
@@ -541,8 +541,8 @@
                         <td>' + (feature.properties['2211'] !== null ? Autolinker.link(feature.properties['2211'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">2213</th>\
-                        <td>' + (feature.properties['2213'] !== null ? Autolinker.link(feature.properties['2213'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                        <th scope="row">3112</th>\
+                        <td>' + (feature.properties['3112'] !== null ? Autolinker.link(feature.properties['3112'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">2262</th>\
@@ -667,7 +667,7 @@
         });
         bounds_group.addLayer(layer_2262Cimateregulation_4);
         map.addLayer(layer_2262Cimateregulation_4);
-        function pop_2213Waterflowregulation_5(feature, layer) {
+        function pop_3112Usingnaturetodestress_5(feature, layer) {
             layer.on({
                 mouseout: function(e) {
                     for (i in e.target._eventParents) {
@@ -701,8 +701,8 @@
                         <td>' + (feature.properties['2211'] !== null ? Autolinker.link(feature.properties['2211'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">2213</th>\
-                        <td>' + (feature.properties['2213'] !== null ? Autolinker.link(feature.properties['2213'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                        <th scope="row">3112</th>\
+                        <td>' + (feature.properties['3112'] !== null ? Autolinker.link(feature.properties['3112'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">2262</th>\
@@ -734,11 +734,11 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_2213Waterflowregulation_5_0(feature) {
+        function style_3112Usingnaturetodestress_5_0(feature) {
             switch(String(feature.properties['2213'])) {
                 case '0':
                     return {
-                pane: 'pane_2213Waterflowregulation_5',
+                pane: 'pane_3112Usingnaturetodestress_5',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.413)',
                 dashArray: '',
@@ -747,13 +747,13 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(247,251,255,0.413)',
+                fillColor: 'rgba(215,25,28,0.413)',
                 interactive: true,
             }
                     break;
                 case '1':
                     return {
-                pane: 'pane_2213Waterflowregulation_5',
+                pane: 'pane_3112Usingnaturetodestress_5',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.413)',
                 dashArray: '',
@@ -762,13 +762,13 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(209,227,243,0.413)',
+                fillColor: 'rgba(253,174,97,0.413)',
                 interactive: true,
             }
                     break;
                 case '4':
                     return {
-                pane: 'pane_2213Waterflowregulation_5',
+                pane: 'pane_3112Usingnaturetodestress_5',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.413)',
                 dashArray: '',
@@ -777,13 +777,13 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(154,200,225,0.413)',
+                fillColor: 'rgba(255,255,191,0.413)',
                 interactive: true,
             }
                     break;
                 case '7':
                     return {
-                pane: 'pane_2213Waterflowregulation_5',
+                pane: 'pane_3112Usingnaturetodestress_5',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.413)',
                 dashArray: '',
@@ -792,13 +792,13 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(82,157,204,0.413)',
+                fillColor: 'rgba(171,221,164,0.413)',
                 interactive: true,
             }
                     break;
                 case '10':
                     return {
-                pane: 'pane_2213Waterflowregulation_5',
+                pane: 'pane_3112Usingnaturetodestress_5',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.413)',
                 dashArray: '',
@@ -807,26 +807,26 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(28,108,177,0.413)',
+                fillColor: 'rgba(43,131,186,0.413)',
                 interactive: true,
             }
                     break;
             }
         }
-        map.createPane('pane_2213Waterflowregulation_5');
-        map.getPane('pane_2213Waterflowregulation_5').style.zIndex = 405;
-        map.getPane('pane_2213Waterflowregulation_5').style['mix-blend-mode'] = 'normal';
-        var layer_2213Waterflowregulation_5 = new L.geoJson(json_2213Waterflowregulation_5, {
+        map.createPane('pane_3112Usingnaturetodestress_5');
+        map.getPane('pane_3112Usingnaturetodestress_5').style.zIndex = 405;
+        map.getPane('pane_3112Usingnaturetodestress_5').style['mix-blend-mode'] = 'normal';
+        var layer_3112Usingnaturetodestress_5 = new L.geoJson(json_3112Usingnaturetodestress_5, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_2213Waterflowregulation_5',
-            layerName: 'layer_2213Waterflowregulation_5',
-            pane: 'pane_2213Waterflowregulation_5',
-            onEachFeature: pop_2213Waterflowregulation_5,
-            style: style_2213Waterflowregulation_5_0,
+            dataVar: 'json_3112Usingnaturetodestress_5',
+            layerName: 'layer_3112Usingnaturetodestress_5',
+            pane: 'pane_3112Usingnaturetodestress_5',
+            onEachFeature: pop_3112Usingnaturetodestress_5,
+            style: style_3112Usingnaturetodestress_5_0,
         });
-        bounds_group.addLayer(layer_2213Waterflowregulation_5);
-        map.addLayer(layer_2213Waterflowregulation_5);
+        bounds_group.addLayer(layer_3112Usingnaturetodestress_5);
+        map.addLayer(layer_3112Usingnaturetodestress_5);
         function pop_2211Erosionratesregulation_6(feature, layer) {
             layer.on({
                 mouseout: function(e) {
@@ -838,7 +838,7 @@
             });
             var popupContent = '<table>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['Name'] !== null ? Autolinker.link(feature.properties['Name'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                        <td colspan="2"><strong>Name</strong><br />' + (feature.properties['Name'] !== null ? Autolinker.link(feature.properties['Name'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">descriptio</th>\
@@ -861,8 +861,8 @@
                         <td>' + (feature.properties['2211'] !== null ? Autolinker.link(feature.properties['2211'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">2213</th>\
-                        <td>' + (feature.properties['2213'] !== null ? Autolinker.link(feature.properties['2213'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                        <th scope="row">3112</th>\
+                        <td>' + (feature.properties['3112'] !== null ? Autolinker.link(feature.properties['3112'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">2262</th>\
@@ -991,8 +991,8 @@
                         <td>' + (feature.properties['2211'] !== null ? Autolinker.link(feature.properties['2211'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">2213</th>\
-                        <td>' + (feature.properties['2213'] !== null ? Autolinker.link(feature.properties['2213'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                        <th scope="row">3112</th>\
+                        <td>' + (feature.properties['3112'] !== null ? Autolinker.link(feature.properties['3112'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">2262</th>\
@@ -1073,17 +1073,17 @@
         bounds_group.addLayer(layer_1111Foodprovision_7);
         map.addLayer(layer_1111Foodprovision_7);
         var baseMaps = {};
-        L.control.layers(baseMaps,{'1111: Food provision<br /><table><tr><td style="text-align: center;"><img src="legend/1111Foodprovision_7_00.png" /></td><td>0</td></tr><tr><td style="text-align: center;"><img src="legend/1111Foodprovision_7_11.png" /></td><td>1</td></tr></table>': layer_1111Foodprovision_7,'2211: Erosion rates regulation<br /><table><tr><td style="text-align: center;"><img src="legend/2211Erosionratesregulation_6_00.png" /></td><td>0</td></tr><tr><td style="text-align: center;"><img src="legend/2211Erosionratesregulation_6_71.png" /></td><td>7</td></tr><tr><td style="text-align: center;"><img src="legend/2211Erosionratesregulation_6_102.png" /></td><td>10</td></tr></table>': layer_2211Erosionratesregulation_6,'2213: Water flow regulation<br /><table><tr><td style="text-align: center;"><img src="legend/2213Waterflowregulation_5_00.png" /></td><td>0</td></tr><tr><td style="text-align: center;"><img src="legend/2213Waterflowregulation_5_11.png" /></td><td>1</td></tr><tr><td style="text-align: center;"><img src="legend/2213Waterflowregulation_5_42.png" /></td><td>4</td></tr><tr><td style="text-align: center;"><img src="legend/2213Waterflowregulation_5_73.png" /></td><td>7</td></tr><tr><td style="text-align: center;"><img src="legend/2213Waterflowregulation_5_104.png" /></td><td>10</td></tr></table>': layer_2213Waterflowregulation_5,'2262: Cimate regulation<br /><table><tr><td style="text-align: center;"><img src="legend/2262Cimateregulation_4_00.png" /></td><td>0</td></tr><tr><td style="text-align: center;"><img src="legend/2262Cimateregulation_4_11.png" /></td><td>1</td></tr><tr><td style="text-align: center;"><img src="legend/2262Cimateregulation_4_42.png" /></td><td>4</td></tr><tr><td style="text-align: center;"><img src="legend/2262Cimateregulation_4_73.png" /></td><td>7</td></tr><tr><td style="text-align: center;"><img src="legend/2262Cimateregulation_4_104.png" /></td><td>10</td></tr></table>': layer_2262Cimateregulation_4,'3111: Environment for sport and recreation<br /><table><tr><td style="text-align: center;"><img src="legend/3111Environmentforsportandrecreation_3_00.png" /></td><td>0</td></tr><tr><td style="text-align: center;"><img src="legend/3111Environmentforsportandrecreation_3_71.png" /></td><td>7</td></tr><tr><td style="text-align: center;"><img src="legend/3111Environmentforsportandrecreation_3_102.png" /></td><td>10</td></tr></table>': layer_3111Environmentforsportandrecreation_3,'Most-Lezaky CLC<br /><table><tr><td style="text-align: center;"><img src="legend/MostLezakyCLC_2_121Industrialorcommercialunits0.png" /></td><td>121: Industrial or commercial units</td></tr><tr><td style="text-align: center;"><img src="legend/MostLezakyCLC_2_141Greenurbanareas1.png" /></td><td>141: Green urban areas</td></tr><tr><td style="text-align: center;"><img src="legend/MostLezakyCLC_2_211Nonirrigatedarableland2.png" /></td><td>211: Non-irrigated arable land</td></tr><tr><td style="text-align: center;"><img src="legend/MostLezakyCLC_2_311Broadleavedforest3.png" /></td><td>311: Broad-leaved forest</td></tr><tr><td style="text-align: center;"><img src="legend/MostLezakyCLC_2_321Naturalgrasslands4.png" /></td><td>321: Natural grasslands</td></tr><tr><td style="text-align: center;"><img src="legend/MostLezakyCLC_2_324Transitionalwoodlandshrub5.png" /></td><td>324: Transitional woodland-shrub</td></tr><tr><td style="text-align: center;"><img src="legend/MostLezakyCLC_2_333Sparselyvegetatedareas6.png" /></td><td>333: Sparsely vegetated areas</td></tr><tr><td style="text-align: center;"><img src="legend/MostLezakyCLC_2_511Watercourses7.png" /></td><td>511: Water courses</td></tr><tr><td style="text-align: center;"><img src="legend/MostLezakyCLC_2_512Waterbodies8.png" /></td><td>512: Water bodies</td></tr></table>': layer_MostLezakyCLC_2,'<img src="legend/MostLekyMine_border_1.png" /> Most-Ležáky Mine_border': layer_MostLekyMine_border_1,"Google Satellite": layer_GoogleSatellite_0,}).addTo(map);
+        L.control.layers(baseMaps,{'1111: Food provision<br /><table><tr><td style="text-align: center;"><img src="legend/1111Foodprovision_7_00.png" /></td><td>0</td></tr><tr><td style="text-align: center;"><img src="legend/1111Foodprovision_7_11.png" /></td><td>1</td></tr></table>': layer_1111Foodprovision_7,'2211: Erosion rates regulation<br /><table><tr><td style="text-align: center;"><img src="legend/2211Erosionratesregulation_6_00.png" /></td><td>0</td></tr><tr><td style="text-align: center;"><img src="legend/2211Erosionratesregulation_6_71.png" /></td><td>7</td></tr><tr><td style="text-align: center;"><img src="legend/2211Erosionratesregulation_6_102.png" /></td><td>10</td></tr></table>': layer_2211Erosionratesregulation_6,'3112: Using nature to destress<br /><table><tr><td style="text-align: center;"><img src="legend/3112Usingnaturetodestress_5_00.png" /></td><td>0</td></tr><tr><td style="text-align: center;"><img src="legend/3112Usingnaturetodestress_5_11.png" /></td><td>1</td></tr><tr><td style="text-align: center;"><img src="legend/3112Usingnaturetodestress_5_42.png" /></td><td>4</td></tr><tr><td style="text-align: center;"><img src="legend/3112Usingnaturetodestress_5_73.png" /></td><td>7</td></tr><tr><td style="text-align: center;"><img src="legend/3112Usingnaturetodestress_5_104.png" /></td><td>10</td></tr></table>': layer_3112Usingnaturetodestress_5,'2262: Cimate regulation<br /><table><tr><td style="text-align: center;"><img src="legend/2262Cimateregulation_4_00.png" /></td><td>0</td></tr><tr><td style="text-align: center;"><img src="legend/2262Cimateregulation_4_11.png" /></td><td>1</td></tr><tr><td style="text-align: center;"><img src="legend/2262Cimateregulation_4_42.png" /></td><td>4</td></tr><tr><td style="text-align: center;"><img src="legend/2262Cimateregulation_4_73.png" /></td><td>7</td></tr><tr><td style="text-align: center;"><img src="legend/2262Cimateregulation_4_104.png" /></td><td>10</td></tr></table>': layer_2262Cimateregulation_4,'3111: Environment for sport and recreation<br /><table><tr><td style="text-align: center;"><img src="legend/3111Environmentforsportandrecreation_3_00.png" /></td><td>0</td></tr><tr><td style="text-align: center;"><img src="legend/3111Environmentforsportandrecreation_3_71.png" /></td><td>7</td></tr><tr><td style="text-align: center;"><img src="legend/3111Environmentforsportandrecreation_3_102.png" /></td><td>10</td></tr></table>': layer_3111Environmentforsportandrecreation_3,'Most-Lezaky CLC<br /><table><tr><td style="text-align: center;"><img src="legend/MostLezakyCLC_2_121Industrialorcommercialunits0.png" /></td><td>121: Industrial or commercial units</td></tr><tr><td style="text-align: center;"><img src="legend/MostLezakyCLC_2_141Greenurbanareas1.png" /></td><td>141: Green urban areas</td></tr><tr><td style="text-align: center;"><img src="legend/MostLezakyCLC_2_211Nonirrigatedarableland2.png" /></td><td>211: Non-irrigated arable land</td></tr><tr><td style="text-align: center;"><img src="legend/MostLezakyCLC_2_311Broadleavedforest3.png" /></td><td>311: Broad-leaved forest</td></tr><tr><td style="text-align: center;"><img src="legend/MostLezakyCLC_2_321Naturalgrasslands4.png" /></td><td>321: Natural grasslands</td></tr><tr><td style="text-align: center;"><img src="legend/MostLezakyCLC_2_324Transitionalwoodlandshrub5.png" /></td><td>324: Transitional woodland-shrub</td></tr><tr><td style="text-align: center;"><img src="legend/MostLezakyCLC_2_333Sparselyvegetatedareas6.png" /></td><td>333: Sparsely vegetated areas</td></tr><tr><td style="text-align: center;"><img src="legend/MostLezakyCLC_2_511Watercourses7.png" /></td><td>511: Water courses</td></tr><tr><td style="text-align: center;"><img src="legend/MostLezakyCLC_2_512Waterbodies8.png" /></td><td>512: Water bodies</td></tr></table>': layer_MostLezakyCLC_2,'<img src="legend/MostLekyMine_border_1.png" /> Most-Ležáky Mine_border': layer_MostLekyMine_border_1,"Google Satellite": layer_GoogleSatellite_0,}).addTo(map);
         setBounds();
-        resetLabels([layer_MostLezakyCLC_2,layer_3111Environmentforsportandrecreation_3,layer_2262Cimateregulation_4,layer_2213Waterflowregulation_5,layer_2211Erosionratesregulation_6,layer_1111Foodprovision_7]);
+        resetLabels([layer_MostLezakyCLC_2,layer_3111Environmentforsportandrecreation_3,layer_2262Cimateregulation_4,layer_3112Usingnaturetodestress_5,layer_2211Erosionratesregulation_6,layer_1111Foodprovision_7]);
         map.on("zoomend", function(){
-            resetLabels([layer_MostLezakyCLC_2,layer_3111Environmentforsportandrecreation_3,layer_2262Cimateregulation_4,layer_2213Waterflowregulation_5,layer_2211Erosionratesregulation_6,layer_1111Foodprovision_7]);
+            resetLabels([layer_MostLezakyCLC_2,layer_3111Environmentforsportandrecreation_3,layer_2262Cimateregulation_4,layer_3112Usingnaturetodestress_5,layer_2211Erosionratesregulation_6,layer_1111Foodprovision_7]);
         });
         map.on("layeradd", function(){
-            resetLabels([layer_MostLezakyCLC_2,layer_3111Environmentforsportandrecreation_3,layer_2262Cimateregulation_4,layer_2213Waterflowregulation_5,layer_2211Erosionratesregulation_6,layer_1111Foodprovision_7]);
+            resetLabels([layer_MostLezakyCLC_2,layer_3111Environmentforsportandrecreation_3,layer_2262Cimateregulation_4,layer_3112Usingnaturetodestress_5,layer_2211Erosionratesregulation_6,layer_1111Foodprovision_7]);
         });
         map.on("layerremove", function(){
-            resetLabels([layer_MostLezakyCLC_2,layer_3111Environmentforsportandrecreation_3,layer_2262Cimateregulation_4,layer_2213Waterflowregulation_5,layer_2211Erosionratesregulation_6,layer_1111Foodprovision_7]);
+            resetLabels([layer_MostLezakyCLC_2,layer_3111Environmentforsportandrecreation_3,layer_2262Cimateregulation_4,layer_3112Usingnaturetodestress_5,layer_2211Erosionratesregulation_6,layer_1111Foodprovision_7]);
         });
         </script>
     </body>
